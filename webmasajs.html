@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Servicio de Masajes</title>
+</head>
+<body>
+    <main>
+     <nav class="rainbow-menu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#informacion">informacion</a></li>
+            <li><a href="#Tipos de Masajes">Tipos de Masajes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+     </nav>
+
+     <section id="inicio" class="hero">
+        <h1>Bienvenidos a Masajes Arco Iris</h1>
+        <div class="carrousel" id="cont-carrou">
+            <button class="carrousel-btn" id="prevBtn">←</button>
+            <img id="carrouselImage" src="img/MasajeAromatizante.jpeg" alt="Carrusel de imágenes">
+            <button class="carrousel-btn" id="nextBtn">→</button>
+        </div>
+     </section>
+
+        <section id="informacion" class="info">
+            <h2>Información</h2>
+            <div class="section">
+                <h3>Descripción del Servicio</h3>
+                <p>En Masajes Arco Iris, creemos que el bienestar integral es fundamental para llevar una vida equilibrada y feliz. Nuestro microemprendimiento se dedica a ofrecer una amplia gama de servicios de masajes, diseñados para satisfacer las necesidades individuales de cada cliente. Con un enfoque en la relajación, la salud y la recuperación, buscamos proporcionar un refugio donde puedas desconectar del estrés diario y reconectar contigo mismo.</p>
+            </div>
+        
+            <div class="section">
+                <h3>Nuestro Enfoque</h3>
+                <p>Cada sesión de masaje es una experiencia única y personalizada. Nos tomamos el tiempo necesario para entender tus necesidades y preferencias, asegurándonos de que cada tratamiento esté adaptado a ti. Utilizamos técnicas variadas que combinan la sabiduría tradicional con enfoques modernos, garantizando así resultados efectivos y satisfactorios.</p>
+            </div>
+        
+            <div class="section">
+                <h3>Ambiente Relajante</h3>
+                <p>Nuestras instalaciones están diseñadas para ofrecer un ambiente cálido y acogedor. Desde la iluminación suave hasta la música tranquila, cada detalle ha sido cuidadosamente seleccionado para crear un espacio propicio para la relajación. Queremos que cada visita sea un momento especial, donde puedas dejar atrás tus preocupaciones y disfrutar de un tiempo para ti.</p>
+            </div>
+
+            <div class="info-content">
+                <div class="info-col">
+                    <h3>Objetivo</h3>
+                    <p>Proporcionar una experiencia de relajación y bienestar a nuestros clientes a través de masajes de alta calidad.</p>
+                </div>
+                <div class="info-col">
+                    <h3>Misión</h3>
+                    <p>Nuestra misión es ofrecer un servicio de masajes excepcional que combine técnicas tradicionales y modernas.</p>
+                </div>
+                <div class="info-col">
+                    <h3>Visión</h3>
+                    <p>Ser reconocidos como líderes en el sector de servicios de masajes, innovando constantemente en nuestras técnicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Tipos de Masajes" class="tipos-de-masajes">
+            <h2>Tipos de Masajes</h2>
+            <ul>
+                <li class="masaje-item" style="background-image: url('img/MasajeRelax.jpeg');">
+                    <strong>Masaje Relax:</strong>
+                    <p>Se lo considera como un masaje suave y fluido que se centra en la relajación total del cuerpo y la mente.</p>
+                </li>
+                <li class="masaje-item" style="background-image: url('img/MasajeDeportivo.jpeg');">
+                    <strong>Masaje Deportivo:</strong>
+                    <p>Terapia intensiva diseñada específicamente para quienes practican deportes o realizan actividades físicas de alta exigencia.</p>
+                </li>
+                <li class="masaje-item" style="background-image: url('img/MasajeTerapeutico\ \(2\).jpeg');">
+                    <strong>Masaje Terapéutico:</strong>
+                    <p>Este tipo de masaje combina varias técnicas como la presión profunda, amasamiento y movimientos circulares.</p>
+                </li>
+                <li class="masaje-item" style="background-image: url('img/MasajeAromatizante.jpeg');">
+                    <strong>Masaje de Aromaterapia:</strong>
+                    <p>Incorpora el uso de aceites esenciales que promueven la relajación y revitalizan el cuerpo.</p>
+                </li>
+                <li class="masaje-item" style="background-image: url('img/MasajePiedra.jpeg');">
+                    <strong>Masaje de Piedras Calientes:</strong>
+                    <p>Esta técnica alivia la rigidez muscular, mejora la circulación sanguínea y proporciona una sensación de confort.</p>
+                </li>
+                <li class="masaje-item" style="background-image: url('img/MasajeFacial.jpeg');">
+                    <strong>Masaje Facial:</strong>
+                    <p>Un tratamiento delicado y rejuvenecedor que se centra en la piel y los músculos faciales.</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <div>
+                    <label for="nombre">Nombre y Apellido :</label>
+                    <input type="text" id="nombre" required>
+                    <span id="name-error" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" required>
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" required>
+                    <span id="phone-error" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" required></textarea>
+                    <span id="message-error" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="tipo-masaje">¿Qué tipo de masaje te gustaría tomar?</label>
+                    <select id="tipo-masaje" name="tipo-masaje" required>
+                        <option value="" disabled selected>Seleccione un tipo de masaje</option>
+                        <option value="masaje-relax">Masaje Relax</option>
+                        <option value="masaje-deportivo">Masaje Deportivo</option>
+                        <option value="masaje-terapeutico">Masaje Terapéutico</option>
+                        <option value="masaje-aromaterapia">Masaje Aromaterapia</option>
+                        <option value="masaje-sueco">Masaje Facial</option>
+                    </select>
+                    <span id="massage-type-error" class="error-message"></span>
+                </div>
+                <button type="submit" id="submit-button" style="display: none;">Enviar</button>
+            </form>
+            <div id="notification" style="display: none;"></div>
+        </section>
+        
+        <div id="submitted-data"></div>
+        <div id="success-message"></div>
+        <div class="social-float">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="https://wa.me/549123456789" target="_blank" aria-label="WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+            </a>
+        </div>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+     <footer>
+        <div class="footer-container">
+            
+            <div class="contact-info">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-phone-alt"></i> Teléfono: <a href="tel:0115555555">0115555555</a></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:masajerelax@msjre.com">masajerelax@msjre.com</a></p>
+                <p><i class="fas fa-clock"></i> Horario: 9:00 a 21:00h</p>
+                <p><strong><i class="fas fa-user-plus"></i> Trabaja con nosotros</strong></p>
+            </div>
+    
+   
+            <div class="location">
+                <h3>Ubicación</h3>
+                <p>San Luis Capital</p>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.0464971107064!2d-66.33528148468226!3d-33.29548108074954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9433273c4c2e5f6b%3A0x8b1d3e5d8c6b3f2f!2sSan%20Luis%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1633456789012!5m2!1ses-419!2sus" 
+                        width="300" 
+                        height="200" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    
+        
+        <p class="footer-text">© 2024 Masajes Arco Iris. Todos los derechos reservados.</p>
+    </footer>
+    
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
