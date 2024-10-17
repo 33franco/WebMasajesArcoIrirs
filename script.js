@@ -57,7 +57,7 @@ function validateForm() {
 
   let valid = true;
 
-  // Validar nombre
+ 
   if (nombre.length < 7) {
       const errorElement = document.getElementById('name-error');
       errorElement.textContent = 'El nombre y apellido deben tener al menos 7 letras.';
@@ -68,7 +68,7 @@ function validateForm() {
       document.getElementById('name-error').classList.remove('visible');
   }
 
-  // Validar correo
+ 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
       const errorElement = document.getElementById('email-error');
@@ -80,7 +80,7 @@ function validateForm() {
       document.getElementById('email-error').classList.remove('visible');
   }
 
-  // Validar teléfono
+  
   if (telefono.length !== 10) {
       const errorElement = document.getElementById('phone-error');
       errorElement.textContent = 'El teléfono debe tener exactamente 10 caracteres.';
@@ -91,7 +91,7 @@ function validateForm() {
       document.getElementById('phone-error').classList.remove('visible');
   }
 
-  // Validar mensaje
+
   if (mensaje.length <= 5) {
       const errorElement = document.getElementById('message-error');
       errorElement.textContent = 'El mensaje debe tener más de 5 letras.';
@@ -102,7 +102,7 @@ function validateForm() {
       document.getElementById('message-error').classList.remove('visible');
   }
 
-  // Validar tipo de masaje
+
   if (tipoMasaje === "") {
       const errorElement = document.getElementById('massage-type-error');
       errorElement.textContent = 'Por favor, selecciona un tipo de masaje.';
@@ -113,7 +113,7 @@ function validateForm() {
       document.getElementById('massage-type-error').classList.remove('visible');
   }
 
-  // Mostrar u ocultar el botón de enviar
+
   submitButton.style.display = valid ? 'block' : 'none';
 }
 
@@ -135,10 +135,10 @@ function handleSubmit(event) {
       <strong>Mensaje:</strong> ${mensaje}<br>
       <strong>Tipo de masaje:</strong> ${tipoMasaje}`;
   
-  notification.classList.add('visible'); // Añadir clase visible
-  notification.style.display = 'block'; // Asegurarse de que se muestre
+  notification.classList.add('visible'); 
+  notification.style.display = 'block'; 
 
-  // Reiniciar el formulario
+  
   form.reset();
   submitButton.style.display = 'none';
 }
