@@ -233,7 +233,7 @@ p {
   }
 }
 
-/* Sección de contacto */
+
 #contacto {
   display: flex;
   flex-direction: column;
@@ -283,7 +283,7 @@ p {
   color: #fff;
 }
 
-/* Estilo para el menú desplegable de tipos de masaje */
+
 #contact-form select {
   background: rgba(255, 255, 255, 0.5);
   color: #000;
